@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    font-size: 16px;
+    color: var(--black);
+    transition: 0.3s;
+    background: var(--white);
+}
+* { 
+    box-sizing: border-box;
+}
+button {color: inherit;}
+:root { 
+    --black: #1a1a1a;
+    --lightPurple: #e6ccff;
+    --purple: #5c00b3;
+    --white: #ffffff;
+    --grey: #f2f2f2;
+    --shadow: #f2f2f2;
+}
+:root .darkmode { 
+    --black: #f2f2f2;
+    --lightPurple: #e6ccff;
+    --purple: #e6ccff;
+    --grey: #4d4d4d;
+    --white: #262626;
+    --shadow: #000000;
+}
+.material-icons-outlined { 
+    vertical-align: middle;
+}
+.header-sm { 
+    font-style: italic;
+    font-weight: bolder;
+}
+.light { 
+    font-weight: bolder;
+    opacity: 0.6;
+}
+a  { 
+    text-decoration: none;
+    color: var(--purple);
+}
+.topBar { 
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: .8rem .5rem;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0 10px 5px var(--shadow);
+}
+.topBarNav { 
+    display: grid;
+    color: var(--black);
+    grid-template-columns: 50% 50%;
+    justify-content: space-between;
+    align-items: center;
+}
+.topBarControlsContainer { 
+    text-align: right;
+    justify-self: stretch;
+}
+.logo img { 
+    height: 50px;
+    width: 50px;
+}
+.topBarNav button, .topBarNav select { 
+    background-color: transparent;
+    border: none;
+    font-weight: bolder;
+}
+.searchBarContainer { 
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem 0;
+    display: flex;
+}
+#search { 
+    color: var(--purple);
+    width: 80%;
+    padding: 12px;
+    margin: 0;
+    border-radius: 12px 0 0 12px;
+    border: none;
+    background-color: var(--grey);
+    outline: none;
+    transition: 0.2s;
+}
+#search:hover { 
+    background-color: var(--lightPurple)
+}
+.searchBtn { 
+    margin: 0;
+    width: 20%;
+    padding: 10px;
+    border-radius: 0 12px 12px 0;
+    border: none;
+    background-color: var(--grey);
+}
+.welcome { 
+    text-align: center;
+}
+.welcome img{ 
+    width: 200px;
+    height: 200px;
+}
+.errMessage { 
+    width: 80%;
+    margin: auto;
+}
+.main { 
+    max-width: 60rem;
+    margin: 1rem auto;
+    padding: 1rem .5rem;
+}
+.wordNameContainer { 
+    display: grid;
+    grid-template-columns: 70% 20%;
+    align-items: center;
+    justify-content: space-between;
+}
+#phonetic { 
+    font-weight: bold;
+    color: var(--purple);
+}
+.playWord { 
+    font-size: 30px;
+    background-color: var(--lightPurple);
+    color: var(--purple);
+    border: none;
+    border-radius: 50%;
+    height: 60px; width: 60px;
+    padding: 2px;
+    line-height: 0;
+    display: none;
+}
+.playWord .material-icons-outlined { 
+    font-size: 30px;
+}
+#wordAudio { 
+    display: none;
+}
+hr { 
+    border: 1px solid var(--grey);
+}
+li { 
+  margin: 15px 0;  
+}
+.wordContentContainer { 
+    padding: 30px 0;
+}

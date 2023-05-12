@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Dictionary App</title>
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet">
+</head>
+
+<body>
+    <div class="allContent">
+  <section class="topBar">
+      <div class="topBarNav">
+          <div class="logo">
+              <img src="logo.png" alt="">
+          </div>
+          <div class="topBarControlsContainer">
+              <select onchange="fontPick()" class="fontPicker">
+                 <option value="serif">Serif</option>
+                 <option value="sans-serif">Sans-serif</option>
+              </select>
+              <button class="themeBtn" onclick="switchTheme()"><i class="material-icons-outlined">dark_mode</i></button>
+          </div>
+     </div>
+     
+     <div class="searchBarContainer"> <input type="text" name="search" id="search" placeholder="Type a word here">
+     <button class="searchBtn" onclick="search()"><i class="material-icons-outlined">search</i></button>
+     </div>
+  </section>
+  
+  <section class="main">
+      <div class="wordNameContainer">
+          <div>
+              <h1 id="title"></h1>
+              <span id="phonetic"></span>
+          </div>
+          <div>
+              <button onclick="playWord()" class="playWord"><i class="material-icons-outlined">play_arrow</i></button>
+          </div>
+      </div>
+      
+      <div class="wordContentContainer">
+          <!--Generated From Dictionary API-->
+      </div>
+  </section>
+  <section class="welcome">
+      <img src="logo.png" alt="NRG Dictionary">
+      <h1>Welcome To Diction-RG</h1>
+      <span class="light">Get meaning of any English word</span>
+  </section>
+</div>
+  <!--AUDIO PLAYER IS HIDDEN-->
+  <audio id="wordAudio" src="">
+      
+  </audio>
+  <!-- Project -->
+  <script src="main.js"></script>
+</body>
+</html>
